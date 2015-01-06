@@ -1,5 +1,6 @@
 # Copyright 2012 Digital Inspiration
 # http://www.labnol.org/
+#This is for Google App Engine hosting
 
 import os
 from google.appengine.ext import webapp

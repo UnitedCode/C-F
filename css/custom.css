@@ -1,10 +1,9 @@
-/*!
- * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
 
-/* Global Styles */
+
+/* Site wide styling
+-------------------------------------------------- 
+*/
+
 
 html,
 body {
@@ -15,28 +14,6 @@ body {
 
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-footer {
-    padding: 30px 0;
-}
-
-.footer-hr {
-    border-top: 2px solid #CCC;
-}
-
-.f-center {
-    text-align: center;
-}
-
-.footer-a {
-    font-size: 35px;
-}
-
-.sticky-footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
 }
 
 .move-down {
@@ -50,6 +27,7 @@ a:hover, a:focus {
 a {
     color: #2ECC71;
 }
+
 
 .btn-primary {
     background-color: #2ECC71;
@@ -66,41 +44,58 @@ a {
     border-color: #27AE60;
 }
 
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.shadow-2 {
+    background-color: rgba(0,0,0,.35);
+    text-shadow: 3px 3px 3px black;
+}
+
+.shadow {
+    text-shadow: 3px 3px 3px black;s
+}
+
+.to-big-fix {
+    margin-right: 0px;
+}
+
+.row {
+    margin: 0;
+}
+
+
+
+/* Navbar styling
+-------------------------------------------------- 
+*/
+
+
 .navbar {
     box-shadow: 0px 3px 5px #333;
-}
-
-.g-green p, .g-green h1 {
-    color: white;
-}
-.g-green p {
-    font-size:24px;
-    padding-bottom: 50px;
-}
-
-.bg-primary {
-    background-color: #2ECC71;
-}
-
-.text-vertical-center {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.text-vertical-center h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
-}
-
-.footer-left {
-    text-align: left;
-}
-
-.footer-right {
-    text-align: right;  
 }
 
 .navbar-brand {
@@ -149,71 +144,51 @@ a {
     background-color: #27ae60;
 }
 
-.shadow-2 {
-    background-color: rgba(0,0,0,.35);
-    text-shadow: 3px 3px 3px black;
+
+/* Footer styling
+-------------------------------------------------- 
+*/
+
+
+footer {
+    padding: 30px 0;
 }
 
-.shadow {
-    text-shadow: 3px 3px 3px black;
+.footer-hr {
+    border-top: 2px solid #CCC;
 }
 
-a.white{
-
-    color: #FCFCFC;
-}
-a.blue {
-    color: #2980b9;
-}
-/* Custom Button Styles */
-
-.btn-dark {
-    border-radius: 0;
-    color: #fff;
-    background-color: rgba(0,0,0,0.4);
+.f-center {
+    text-align: center;
 }
 
-.btn-dark:hover,
-.btn-dark:focus,
-.btn-dark:active {
-    color: #fff;
-    background-color: rgba(0,0,0,0.7);
+.footer-left {
+    text-align: left;
 }
 
-.btn-light {
-    border-radius: 0;
-    color: #333;
-    background-color: rgb(255,255,255);
+.footer-right {
+    text-align: right;  
 }
 
-.btn-light:hover,
-.btn-light:focus,
-.btn-light:active {
-    color: #333;
-    background-color: rgba(255,255,255,0.8);
+.footer-a {
+    font-size: 35px;
 }
 
-/* Custom Horizontal Rule */
-
-hr.small {
-    max-width: 100px;
+.sticky-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
-/* Home */
-
-.follow-up-p {
-    color: #333;
+.fine-print {
+   font-size: 8px;  
 }
 
-.follow-up-p h2 {
-    font-size: 45px;
-}
 
-.follow-up-p p {
-    font-size: 27px;
-}
+/* index.html styling
+-------------------------------------------------- 
+*/
 
-/* Header */
 
 .header {
   display: table;
@@ -228,14 +203,50 @@ hr.small {
   -o-background-size: cover;
 }
 
+.bg-primary {
+    background-color: #2ECC71;
+}
+ 
+.white, .white:hover {
+    color: white;
+}
 
-/* About */
+.g-green p, .g-green h1 {
+    color: white;
+}
+.g-green p {
+    font-size:24px;
+    padding-bottom: 50px;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+.follow-up-p {
+    color: #333;
+}
+
+.follow-up-p h2 {
+    font-size: 45px;
+}
+
+.follow-up-p p {
+    font-size: 27px;
+}
 
 .about {
     padding: 50px 0;
 }
-
-/* Services */
 
 .services {
     padding: 50px 0;
@@ -262,7 +273,6 @@ i.service-icon {
     text-align: center;
 }
 
-/* Callout */
 
 .callout {
     color: #FFF;
@@ -272,26 +282,6 @@ i.service-icon {
     background: url("../img/portfolio-4.jpg") no-repeat fixed center center / cover transparent;
 }
 
-/* Portfolio */
-
-.portfolio {
-    padding: 50px 0;
-}
-
-.portfolio-item {
-    margin-bottom: 30px;
-}
-
-.img-portfolio {
-    margin: 0 auto;
-}
-
-.img-portfolio:hover {
-    opacity: 0.8;
-}
-
-/* Call to Action */
-
 .call-to-action {
     padding: 50px 0;
     margin-bottom: -20px;
@@ -300,13 +290,26 @@ i.service-icon {
 .call-to-action .btn {
     margin: 10px;
 }
-
-/* Contact */
-
-.answer {
-    display:none;
-    margin-left:60px;
+.hours-about {
+    margin-bottom: -1px;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.4;
 }
+
+.hours-sub-about {
+    margin-bottom: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 20px;
+} 
+
+
+
+/* faq.html styling
+-------------------------------------------------- 
+*/
+
 
 #faq-list h2 {
     line-height:80px;
@@ -322,10 +325,24 @@ i.service-icon {
     color:#27ae60;
 }
 
+#faq-list hr {
+    border-bottom: 3px solid #ccc;
+}
+
 .answer p {
   margin-left: 100px;
   font-size: 30px;
 }
+
+.answer {
+    display:none;
+    margin-left:60px;
+}
+
+
+/* travels.html styling
+-------------------------------------------------- 
+*/
 
 
 .t-green {
@@ -367,6 +384,11 @@ i.service-icon {
     border-bottom: 1px solid #2ECC71;
 }
 
+/* seminars.html styling
+-------------------------------------------------- 
+*/
+
+
 .sm-intro {
     background-color:#2ECC71;
     box-shadow: 0px 3px 5px #333;
@@ -405,6 +427,12 @@ i.service-icon {
     text-align: right;
     margin-right: 50px;
 }
+
+
+/* shop.html styling
+-------------------------------------------------- 
+*/
+
 
 .carousel-control:hover, .carousel-control:focus {
     color: #27AE60;
@@ -450,6 +478,12 @@ i.service-icon {
     box-shadow: 0px 3px 5px #333;
 }
 
+
+/* roadbikes.html styling
+-------------------------------------------------- 
+*/
+
+
 .rb-callout {
     color: #FFF;
     display: table;
@@ -457,6 +491,12 @@ i.service-icon {
     width: 100%;
     background: url("../img/shop/roadbikes.jpg") no-repeat fixed center center / cover transparent;
 }
+
+
+/* mountainbikes.html styling
+-------------------------------------------------- 
+*/
+
 
 .mb-callout {
     color: #FFF;
@@ -466,6 +506,12 @@ i.service-icon {
     background: url("../img/shop/mountainbikes.jpg") no-repeat fixed center center / cover transparent;
 } 
 
+
+/* cyclebikes.html styling
+-------------------------------------------------- 
+*/
+
+
 .cb-callout {
     color: #FFF;
     display: table;
@@ -473,6 +519,12 @@ i.service-icon {
     width: 100%;
     background: url("../img/shop/cyclebikes.jpg") no-repeat fixed center center / cover transparent;
 }
+
+
+/* foldingbikes.html styling
+-------------------------------------------------- 
+*/
+
 
 .fb-callout {
     color: #FFF;
@@ -482,6 +534,12 @@ i.service-icon {
     background: url("../img/shop/foldingbikes.jpg") no-repeat fixed center center / cover transparent;
 }
 
+
+/* electric-assist.html styling
+-------------------------------------------------- 
+*/
+
+
 .ea-callout {
     color: #FFF;
     display: table;
@@ -490,21 +548,38 @@ i.service-icon {
     background: url("../img/shop/electric-assist.jpg") no-repeat fixed center center / cover transparent;
 }
 
+
+/* women.html styling
+-------------------------------------------------- 
+*/
+
+
 .wb-callout {
     color: #FFF;
     display: table;
     height: 400px;
     width: 100%;
-    background: url("../img/shop/electric-assist.jpg") no-repeat fixed center center / cover transparent;
+    background: url("../img/shop/womenbikes.jpg") no-repeat fixed center center / cover transparent;
 }
 
-.cb-callout {
+
+/* childrenbikes.html styling
+-------------------------------------------------- 
+*/
+
+.chb-callout {
     color: #FFF;
     display: table;
     height: 400px;
     width: 100%;
     background: url("../img/shop/childrensbikes.jpg") no-repeat fixed center center / cover transparent;
 }
+
+
+/* Mailchimp pages styling
+-------------------------------------------------- 
+*/
+
 
 .mc-center {
     text-align:center;
@@ -520,6 +595,103 @@ i.service-icon {
     font-size:24px;
 }
 
+
+/* Responsive styling
+-------------------------------------------------- 
+*/
+
+
+
+/* Styling for tablets*/
+
+@media(max-width:991px) {
+
+}
+
+/* Styling for mobile phones*/
+
 @media(max-width:768px) {
+
+    body {
+        font-size: 10px;
+    }
+
+    p {
+        margin: 0px 0px 5px
+    }
+
+    .footer-a {
+        font-size: 25px;
+    }
+
+    .fa-3x {
+        font-size: 2.5em;
+    }
+
+    .follow-up-p p {
+        font-size: 20px;
+    }
+
+    .text-vertical-center h1 {
+        font-size: 2.5em;
+    }
+
+    .g-green p {
+        font-size: 20px;
+    }
+
+    #faq-list h2 {
+        line-height:25px;
+        font-size:20px;
+        padding-left:30px;
+    }
+
+    .answer p {
+        margin-left: 1px;
+        font-size: 15px;
+    }
+
+    .t-green p, .t-white p { 
+        font-size: 15px;
+    }
+
+    .t-green h2, .t-white h1 { 
+        padding-top: 20px;
+    }
+
+    .sm-intro p {
+        font-size: 18px;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+    .sm-green h2, .sm-white h2, .sm-green p, .sm-white p {
+        margin-left: 25px;
+    }
+
+    .sm-green h2, .sm-white h2 {
+        font-size: 18px;
+    }
+
+    .sm-green h3, .sm-white h3 {
+        margin-right: 25px;
+        font-size: 16px;
+    }
+
+    .s-heading a {
+        font-size: 12px;
+    }
+
+    .s-heading {
+        font-size: 15px;
+    }
+
+    .s-lead {
+        font-size: 14px;
+    }
+
+    .s-item a {
+        font-size: 30px;
+    }
 
 }
