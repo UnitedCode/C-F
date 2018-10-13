@@ -4,8 +4,8 @@ threadsafe: true
 
 handlers:
 - url: /
-  static_files: /index.html
-  upload: /index.html
+  static_files: html/contact.html
+  upload: html/contact.html
 
 - url: /
-  static_dir: /
+  static_dir: html
