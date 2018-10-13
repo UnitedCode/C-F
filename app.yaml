@@ -4,8 +4,17 @@ threadsafe: true
 
 handlers:
 - url: /
-  static_files: index.html
-  upload: index.html
+  script: home.app
 
-- url: /
-  static_dir: /
+- url: /index\.html
+  script: home.app
+
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /(.*\.(gif|png|jpg))$
+  static_files: static/\1
+  upload: static/.*\.(gif|png|jpg)$
+
+- url: /.*
+  script: not_found.app
